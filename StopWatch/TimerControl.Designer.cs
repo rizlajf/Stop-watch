@@ -34,6 +34,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.StopButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
+            this.SetTimebutton = new System.Windows.Forms.Button();
+            this.textBoxHH = new System.Windows.Forms.TextBox();
+            this.textBoxMM = new System.Windows.Forms.TextBox();
+            this.textBoxSS = new System.Windows.Forms.TextBox();
+            this.textBoxMS = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // timer1
@@ -69,7 +74,7 @@
             // StopButton
             // 
             this.StopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StopButton.Location = new System.Drawing.Point(118, 78);
+            this.StopButton.Location = new System.Drawing.Point(231, 78);
             this.StopButton.Name = "StopButton";
             this.StopButton.Size = new System.Drawing.Size(75, 23);
             this.StopButton.TabIndex = 2;
@@ -80,7 +85,7 @@
             // ResetButton
             // 
             this.ResetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetButton.Location = new System.Drawing.Point(216, 78);
+            this.ResetButton.Location = new System.Drawing.Point(129, 183);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(75, 23);
             this.ResetButton.TabIndex = 3;
@@ -88,12 +93,61 @@
             this.ResetButton.UseVisualStyleBackColor = true;
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
+            // SetTimebutton
+            // 
+            this.SetTimebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetTimebutton.Location = new System.Drawing.Point(22, 130);
+            this.SetTimebutton.Name = "SetTimebutton";
+            this.SetTimebutton.Size = new System.Drawing.Size(75, 23);
+            this.SetTimebutton.TabIndex = 4;
+            this.SetTimebutton.Text = "Set Time";
+            this.SetTimebutton.UseVisualStyleBackColor = true;
+            this.SetTimebutton.Click += new System.EventHandler(this.SetTimebutton_Click);
+            // 
+            // textBoxHH
+            // 
+            this.textBoxHH.Location = new System.Drawing.Point(104, 132);
+            this.textBoxHH.Name = "textBoxHH";
+            this.textBoxHH.Size = new System.Drawing.Size(34, 20);
+            this.textBoxHH.TabIndex = 5;
+            this.textBoxHH.Text = "HH";
+            // 
+            // textBoxMM
+            // 
+            this.textBoxMM.Location = new System.Drawing.Point(145, 132);
+            this.textBoxMM.Name = "textBoxMM";
+            this.textBoxMM.Size = new System.Drawing.Size(32, 20);
+            this.textBoxMM.TabIndex = 6;
+            this.textBoxMM.Text = "MM";
+            // 
+            // textBoxSS
+            // 
+            this.textBoxSS.Location = new System.Drawing.Point(184, 132);
+            this.textBoxSS.Name = "textBoxSS";
+            this.textBoxSS.Size = new System.Drawing.Size(31, 20);
+            this.textBoxSS.TabIndex = 7;
+            this.textBoxSS.Text = "SS";
+            // 
+            // textBoxMS
+            // 
+            this.textBoxMS.Location = new System.Drawing.Point(222, 132);
+            this.textBoxMS.Name = "textBoxMS";
+            this.textBoxMS.Size = new System.Drawing.Size(32, 20);
+            this.textBoxMS.TabIndex = 8;
+            this.textBoxMS.Text = "MS";
+            this.textBoxMS.Visible = false;
+            // 
             // TimerControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(327, 119);
+            this.ClientSize = new System.Drawing.Size(327, 234);
+            this.Controls.Add(this.textBoxMS);
+            this.Controls.Add(this.textBoxSS);
+            this.Controls.Add(this.textBoxMM);
+            this.Controls.Add(this.textBoxHH);
+            this.Controls.Add(this.SetTimebutton);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.label1);
@@ -112,5 +166,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button StopButton;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Button SetTimebutton;
+        private System.Windows.Forms.TextBox textBoxHH;
+        private System.Windows.Forms.TextBox textBoxMM;
+        private System.Windows.Forms.TextBox textBoxSS;
+        private System.Windows.Forms.TextBox textBoxMS;
     }
 }
